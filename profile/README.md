@@ -42,7 +42,8 @@ The harness that learns. The agent that decides.
 | Repo | Role |
 |---|---|
 | [openshield](https://github.com/Blackshield-Company/openshield) | Open-source AI coding harness in Rust 🛡 |
-| [openshield-armory](https://github.com/Blackshield-Company/openshield-armory) | GUI armory for OpenShield — desktop + Android |
+| [openshield-desktop](https://github.com/Blackshield-Company/openshield-desktop) | GUI companion for OpenShield — sessions, streaming chat, tool approvals, swarm monitor. Tauri 2 + SvelteKit 2 |
+| [openshield-mobile](https://github.com/Blackshield-Company/openshield-mobile) | OpenShield Pocket — Android port; pair to `openshield serve` over LAN for chat, approvals, swarm |
 
 ## Blackshield Theme Family
 
