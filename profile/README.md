@@ -1,5 +1,7 @@
 # ⚫🛡 Blackshield Company
 
+![Blackshield Company](https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/blackshieldcontract-small.png)
+
 **Steel over spectacle.**
 
 We build the tools that hold the line — digital forensics, security tooling, AI platforms, and the
