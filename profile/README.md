@@ -50,6 +50,7 @@ The livery, in pixels. Dark steel tiles, bone glyphs, one blood accent.
 
 | Repo | Role |
 |---|---|
+| [cachyos-blackshield](https://github.com/Blackshield-Company/cachyos-blackshield) | CachyOS theme pack — KDE Plasma livery, terminals, nvim colorscheme, boot splash, wallpapers |
 | [blackshield-clock-widget](https://github.com/Blackshield-Company/blackshield-clock-widget) | Gothic medieval clock widget for Android |
 | [blackshield-icon-pack](https://github.com/Blackshield-Company/blackshield-icon-pack) | Full-coverage Android icon pack — 48k components / 13.7k apps / 20 launchers |
 
