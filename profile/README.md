@@ -1,4 +1,4 @@
-# ⚫🦞 Blackshield Company
+# ⚫🛡 Blackshield Company
 
 **Steel over spectacle.**
 
@@ -53,4 +53,4 @@ The livery, in pixels. Dark steel tiles, bone glyphs, one blood accent.
 
 ---
 
-**The shield holds.** ⚫🦞
+**The shield holds.** ⚫🛡
