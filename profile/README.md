@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="blackshield-logo.png" alt="Blackshield Company shield logo" width="180">
+  <img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/blackshield-banner.jpg" alt="Blackshield Company banner" width="100%">
 </p>
 
 <h1 align="center">Blackshield Company</h1>
