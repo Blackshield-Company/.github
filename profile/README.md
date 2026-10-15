@@ -1,3 +1,5 @@
+![.github](../.github/preview.png)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/blackshield-banner.jpg" alt="Blackshield Company banner" width="100%">
 </p>
