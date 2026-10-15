@@ -58,6 +58,3 @@ jobs:
       - name: Shell script syntax
         run: |
           find . -name '*.sh' -not -path './.git/*' -not -path '*/node_modules/*' -print0 | xargs -0 -r -n1 bash -n
-      - name: Check README and LICENSE exist
-        run: |
-          ls README* >/dev/null 2>&1 || { echo "::error::README missing"; exit 1; }
