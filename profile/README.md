@@ -9,6 +9,11 @@
 <p align="center"><em>To better ourselves, each other, and AI, under God.</em></p>
 
 <p align="center">
+  <img src="knight-a.gif" alt="Knight A, the Blackshield Company mascot, cycling through idle, thinking, working, success and error" width="192"><br>
+  <sub>Knight A, our mascot. He stands watch in <a href="https://github.com/Blackshield-Company/openshield">OpenShield</a>.</sub>
+</p>
+
+<p align="center">
   <a href="https://blackshield-company.pages.dev">Studio site</a> ·
   <a href="https://github.com/sponsors/synthalorian">GitHub Sponsors</a> ·
   <a href="https://ko-fi.com/synthalorian">Ko-fi</a> ·
