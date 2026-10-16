@@ -1,7 +1,5 @@
-![.github](../.github/preview.png)
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/blackshield-banner.jpg" alt="Blackshield Company banner" width="100%">
+  <img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/.github/preview.png" alt="Blackshield Company banner: a fortress gate hung with red-cross banners" width="100%">
 </p>
 
 <h1 align="center">Blackshield Company</h1>
@@ -57,7 +55,7 @@ An independent studio founded in 2026 by [synthalorian](https://github.com/synth
 | [voidengine](https://github.com/Blackshield-Company/voidengine) | Game engine with hot reload and data-driven design (Odin + SDL2) |
 | [void-mercs-demo](https://github.com/Blackshield-Company/void-mercs-demo) | Free playable demo of Void Mercs |
 | [open-synth](https://github.com/Blackshield-Company/open-synth) | Open-source synthesizer: standalone, VST3 and CLAP |
-| [blackshield-knight-sprite](https://github.com/Blackshield-Company/blackshield-knight-sprite) | Procedural knight sprite atlas |
+| [Knight A](https://github.com/Blackshield-Company/openshield/blob/main/scripts/knight-sprite.py) | Company mascot: five animated states, generator in openshield |
 
 ## Themes & Linux
 [omarchy-blackshield](https://github.com/Blackshield-Company/omarchy-blackshield) · [cachyos-blackshield](https://github.com/Blackshield-Company/cachyos-blackshield) · [cachyos-synthwave84](https://github.com/Blackshield-Company/cachyos-synthwave84) · [blackshield-icon-pack](https://github.com/Blackshield-Company/blackshield-icon-pack) · [blackshield-clock-widget](https://github.com/Blackshield-Company/blackshield-clock-widget) · [daedric-online-linux](https://github.com/Blackshield-Company/daedric-online-linux) · [daedric-toolkit](https://github.com/Blackshield-Company/daedric-toolkit) · [daedric-companion](https://github.com/Blackshield-Company/daedric-companion) · [this-is-the-wide](https://github.com/Blackshield-Company/this-is-the-wide)
