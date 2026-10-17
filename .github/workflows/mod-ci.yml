@@ -1,0 +1,105 @@
+name: Mod CI (reusable)
+
+# Shared checks for Blackshield Company Skyrim mods built with tools/modkit.
+# Call from a mod repo with:
+#   jobs:
+#     mod-ci:
+#       uses: Blackshield-Company/.github/.github/workflows/mod-ci.yml@main
+
+on:
+  workflow_call:
+    inputs:
+      dotnet-version:
+        type: string
+        default: "9.0.x"
+      papyrus-dir:
+        type: string
+        default: src/papyrus
+      fomod-dir:
+        type: string
+        default: fomod
+
+permissions:
+  contents: read
+
+jobs:
+  mod-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      KIT: tools/modkit
+      PSC_DIR: ${{ inputs.papyrus-dir }}
+      FOMOD_DIR: ${{ inputs.fomod-dir }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install xmllint
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq libxml2-utils >/dev/null
+
+      - name: Lint FOMOD XML
+        run: |
+          set -euo pipefail
+          test -f "$FOMOD_DIR/ModuleConfig.xml" || { echo "::error::$FOMOD_DIR/ModuleConfig.xml missing"; exit 1; }
+          for f in "$FOMOD_DIR"/*.xml; do
+            xmllint --noout "$f" && echo "well-formed: $f"
+          done
+          XSD="$KIT/fomod/schema/ModuleConfig.xsd"
+          if [ -f "$XSD" ]; then
+            xmllint --noout --schema "$XSD" "$FOMOD_DIR/ModuleConfig.xml"
+          else
+            echo "::warning::$XSD not found, schema validation skipped"
+          fi
+
+      - name: Check Papyrus sources
+        run: |
+          python3 - <<'PY'
+          import os, re, sys
+          d = os.environ["PSC_DIR"]
+          files = sorted(f for f in os.listdir(d) if f.lower().endswith(".psc")) if os.path.isdir(d) else []
+          if not files:
+              print(f"no Papyrus sources in {d} (script-free mod)")
+              sys.exit(0)
+          bad = 0
+          for f in files:
+              p = os.path.join(d, f)
+              text = open(p, encoding="utf-8-sig", errors="replace").read()
+              m = re.search(r"^\s*ScriptName\s+(\w+)", text, re.I | re.M)
+              stem = os.path.splitext(f)[0]
+              if not m:
+                  print(f"::error file={p}::no ScriptName line"); bad += 1
+              elif m.group(1).lower() != stem.lower():
+                  print(f"::error file={p}::ScriptName {m.group(1)} does not match file name {stem}"); bad += 1
+              if re.search(r"\bSKSE\b", text) and "no SKSE" in open("README.md", encoding="utf-8", errors="replace").read():
+                  print(f"::warning file={p}::mentions SKSE in a mod that promises no SKSE")
+          print(f"{len(files)} Papyrus sources checked, {bad} problems")
+          sys.exit(1 if bad else 0)
+          PY
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ inputs.dotnet-version }}
+
+      - name: Build (Papyrus compile, plugin, modkit validator, FOMOD pack)
+        run: DIST_DIR="$RUNNER_TEMP/dist" ./build.sh
+
+      - name: Check plugin presence and structure
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          zips=("$RUNNER_TEMP"/dist/*.zip)
+          [ ${#zips[@]} -gt 0 ] || { echo "::error::build produced no archive"; exit 1; }
+          for z in "${zips[@]}"; do
+            out="$RUNNER_TEMP/unpack/$(basename "$z" .zip)"
+            mkdir -p "$out" && unzip -q "$z" -d "$out"
+            mapfile -t plugins < <(find "$out" -type f \( -iname '*.esp' -o -iname '*.esm' -o -iname '*.esl' \))
+            [ ${#plugins[@]} -gt 0 ] || { echo "::error::no plugin (.esp/.esm/.esl) in $(basename "$z")"; exit 1; }
+            for p in "${plugins[@]}"; do
+              echo "== $p"
+              python3 "$KIT/esp_check.py" "$p"
+              if [ -f "$KIT/alias_tags.py" ]; then python3 "$KIT/alias_tags.py" "$p"; fi
+            done
+          done
