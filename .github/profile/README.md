@@ -51,12 +51,12 @@ An AI coding harness and the clients around it. Terminal first, your own keys or
 
 ## More from the studio
 
-Games, audio, forensics tools and Skyrim SE/AE mods are still in the founder's account while the move is staged. Free on [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/users/synthalorian), source on [GitHub](https://github.com/synthalorian?tab=repositories&q=blackshield).
+Games, audio, forensics tools and Skyrim SE/AE mods. The mods are free on [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/users/synthalorian); source is here.
 
-- [voidengine](https://github.com/synthalorian/voidengine) and [void-mercs-demo](https://github.com/synthalorian/void-mercs-demo)
-- [open-synth](https://github.com/synthalorian/open-synth) and [kicks](https://github.com/synthalorian/kicks)
-- [custody](https://github.com/synthalorian/custody), [docket](https://github.com/synthalorian/docket) and [timeline](https://github.com/synthalorian/timeline)
-- [Skyrim mods](https://www.nexusmods.com/skyrimspecialedition/users/synthalorian): Blackshield Company, Contract Hunter, Steel Oath and more
+- [voidengine](https://github.com/Blackshield-Company/voidengine), [voidengine-level-editor](https://github.com/Blackshield-Company/voidengine-level-editor) and [void-mercs-demo](https://github.com/Blackshield-Company/void-mercs-demo)
+- [kicks](https://github.com/Blackshield-Company/kicks) and [Open-Amp](https://github.com/Blackshield-Company/Open-Amp), plus [open-synth](https://github.com/synthalorian/open-synth)
+- [custody](https://github.com/Blackshield-Company/custody), [docket](https://github.com/Blackshield-Company/docket), [timeline](https://github.com/Blackshield-Company/timeline), [beacon](https://github.com/Blackshield-Company/beacon) and [exifguard](https://github.com/Blackshield-Company/exifguard)
+- Skyrim mods: [blackshield-company](https://github.com/Blackshield-Company/blackshield-company), [contract-hunter](https://github.com/Blackshield-Company/contract-hunter), [steel-oath](https://github.com/Blackshield-Company/steel-oath) and more
 
 ---
 
