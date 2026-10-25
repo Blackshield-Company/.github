@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Blackshield Company: black shield, red cross, steel frame" width="640">
+<img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/assets/banner.png" alt="Blackshield Company: black shield, red cross, steel frame" width="640">
 
 # Blackshield Company
 
@@ -8,7 +8,7 @@
 
 Independent studio building open-source AI coding tools, forensics and privacy software, mesh networking, games, themes and Skyrim mods.
 
-<img src="assets/knight-cycle.gif" alt="The Blackshield knight: idle, raising the shield, saluting with the sword, kneeling, waving the banner" width="128" height="128">
+<img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/assets/knight-cycle.gif" alt="The Blackshield knight: idle, raising the shield, saluting with the sword, kneeling, waving the banner" width="128" height="128">
 
 [Studio site](https://blackshield-company.pages.dev/) &nbsp;|&nbsp; [Skyrim mods on Nexus](#skyrim-mods) &nbsp;|&nbsp; [Sponsor](https://github.com/sponsors/synthalorian) &nbsp;|&nbsp; [Ko-fi](https://ko-fi.com/synthalorian) &nbsp;|&nbsp; [Contact](mailto:blackshield@mail.grokbot.com)
 
