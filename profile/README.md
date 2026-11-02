@@ -97,7 +97,7 @@ Local-first, offline where it can be, and built to hold. Most projects are small
 
 Also on Nexus Mods as synthalorian:
 
-- **Oblivion Remastered**: [mod 5765](https://www.nexusmods.com/oblivionremastered/mods/5765) and [mod 5766](https://www.nexusmods.com/oblivionremastered/mods/5766)
+- **Oblivion Remastered**: [Blackshield Balance Patch](https://www.nexusmods.com/oblivionremastered/mods/5765) and [Blackshield Company Ledger](https://www.nexusmods.com/oblivionremastered/mods/5766)
 - **Baldur's Gate 3**: [Armory](https://www.nexusmods.com/baldursgate3/mods/26325)
 - **Fallout 4**: [Field Rations](https://www.nexusmods.com/fallout4/mods/110818)
 
