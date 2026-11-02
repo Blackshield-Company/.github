@@ -4,13 +4,13 @@
 
 # Blackshield Company
 
-**Steel over spectacle.**
+**Guts. Steel. Code. The shield holds.**
 
-Independent studio building open-source AI coding tools, forensics and privacy software, mesh networking, games, themes and Skyrim mods.
+Independent studio building open-source AI coding tools, forensics and privacy software, mesh networking, games, themes, and mods for Skyrim, Oblivion Remastered, Baldur's Gate 3 and Fallout 4.
 
-<img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/blackshield.png" alt="The Blackshield knight" width="256" height="224">
+<img src="https://raw.githubusercontent.com/Blackshield-Company/.github/main/profile/assets/knight.gif" alt="The Blackshield knight, animated" width="256" height="256">
 
-[Studio site](https://blackshield-company.pages.dev/) &nbsp;|&nbsp; [Skyrim mods on Nexus](#skyrim-mods) &nbsp;|&nbsp; [Sponsor](https://github.com/sponsors/synthalorian) &nbsp;|&nbsp; [Ko-fi](https://ko-fi.com/synthalorian) &nbsp;|&nbsp; [Contact](mailto:blackshield@mail.grokbot.com)
+[Studio site](https://blackshield.studio) &nbsp;|&nbsp; [Mods on Nexus](https://next.nexusmods.com/profile/synthalorian) &nbsp;|&nbsp; [Sponsor](https://github.com/sponsors/synthalorian) &nbsp;|&nbsp; [Ko-fi](https://ko-fi.com/synthalorian) &nbsp;|&nbsp; [Contact](mailto:hello@blackshield.studio)
 
 </div>
 
@@ -93,6 +93,14 @@ Local-first, offline where it can be, and built to hold. Most projects are small
 | [`blackshield-icon-pack`](https://github.com/Blackshield-Company/blackshield-icon-pack) | Full-coverage Android icon pack: dark steel tiles, bone glyphs, one blood accent. | Apache&#8209;2.0 |
 | [`blackshield-clock-widget`](https://github.com/Blackshield-Company/blackshield-clock-widget) | Gothic medieval clock widget for Android. | Apache&#8209;2.0 |
 
+## Mods for other games
+
+Also on Nexus Mods as synthalorian:
+
+- **Oblivion Remastered**: [mod 5765](https://www.nexusmods.com/oblivionremastered/mods/5765) and [mod 5766](https://www.nexusmods.com/oblivionremastered/mods/5766)
+- **Baldur's Gate 3**: [Armory](https://www.nexusmods.com/baldursgate3/mods/26325)
+- **Fallout 4**: [Field Rations](https://www.nexusmods.com/fallout4/mods/110818)
+
 ## Skyrim mods
 
 Fifteen free mods, published on Nexus Mods as synthalorian. All are ESL plugins and none need SKSE. Every one is in early beta, so expect rough edges, and please send bug reports.
@@ -147,6 +155,6 @@ Our Reticulum mesh projects ([reticulum-hub](https://github.com/synthalorian/ret
 
 Blackshield software is free and open source. If it saves you time you can support the work through [GitHub Sponsors](https://github.com/sponsors/synthalorian) or [Ko-fi](https://ko-fi.com/synthalorian). Donations are optional.
 
-Questions and bug reports: open an issue on the project, or write to [blackshield@mail.grokbot.com](mailto:blackshield@mail.grokbot.com).
+Questions and bug reports: open an issue on the project, or write to [hello@blackshield.studio](mailto:hello@blackshield.studio).
 
 <sub>Licenses are listed from each repository's LICENSE file. Where a repository has no LICENSE file it says "not stated".</sub>
